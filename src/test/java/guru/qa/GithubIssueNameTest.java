@@ -43,20 +43,14 @@ public class GithubIssueNameTest {
     @DisplayName("Поиск Issue по названию в репозитории Github с лямбда шагами")
     public void searchIssueNameLambdaTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
-        step("Открываем главную страницу " + WEBSITE, () -> {
-            open(WEBSITE);
-        });
+        step("Открываем главную страницу " + WEBSITE, () -> open(WEBSITE));
         step("Ищем репозиторий " + REPOSITORY, () -> {
             $(".search-input").click();
             $("#query-builder-test").setValue(REPOSITORY).pressEnter();
             $("[data-testid='results-list']").shouldHave(text(REPOSITORY));
         });
-        step("Кликаем по ссылке найденного репозитория " + REPOSITORY, () -> {
-            $(byLinkText(REPOSITORY)).click();
-        });
-        step("Кликаем по вкладке Issues", () -> {
-            $("#issues-tab").click();
-        });
+        step("Кликаем по ссылке найденного репозитория " + REPOSITORY, () -> $(byLinkText(REPOSITORY)).click());
+        step("Кликаем по вкладке Issues", () -> $("#issues-tab").click());
         step("Проверяем наличие Issue c названием" + ISSUE_NAME, () -> {
             $(byText(ISSUE_NAME)).should(exist);
         });
