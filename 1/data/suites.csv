@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Nov 30 23:52:28 GMT 2023","Thu Nov 30 23:52:30 GMT 2023","2025","","guru.qa.GithubIssueNameTest","","guru.qa.GithubIssueNameTest","searchIssueNameLambdaTest","Поиск Issue по названию в репозитории Github с лямбда шагами",""
+"passed","Thu Nov 30 23:52:21 GMT 2023","Thu Nov 30 23:52:28 GMT 2023","6359","","guru.qa.GithubIssueNameTest","","guru.qa.GithubIssueNameTest","searchIssueNameWithAnnotatedStepsTest","Поиск Issue по названию в репозитории Github степами с аннотацией",""
+"passed","Thu Nov 30 23:52:30 GMT 2023","Thu Nov 30 23:52:32 GMT 2023","2104","","guru.qa.GithubIssueNameTest","","guru.qa.GithubIssueNameTest","searchIssueNameTest","Поиск Issue по названию в репозитории Github",""
